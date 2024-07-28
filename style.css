@@ -1,0 +1,11 @@
+/* test if stylesheet is linked */
+#linked-test {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
