@@ -6,23 +6,25 @@
 // console.log(linkedTestElement);
 // **un-comment out the section above**
 
-// | **********    if/else    ***********
+// | **********    switch  ***********
 
 const noRepeat = "a string";
-let repeatVar = null;
-let checkProperty = false;
-if ((checkProperty = false)) {
-  repeatVar = "property one";
-  console.log(`${noRepeat} + condition ONE met`);
-} else if ((checkProperty = false)) {
-  repeatVar = "property two";
-  console.log(`${noRepeat} + condition TWO met`);
-} else if ((checkProperty = true)) {
-  repeatVar = "property three";
-  console.log(`${noRepeat} + condition THREE met`);
-} else if ((checkProperty = false)) {
-  repeatVar = "property four";
-  console.log(`${noRepeat} + condition FOUR met`);
-} else {
-  console.log("default condition");
+let checkProperty = true;
+
+switch (checkProperty) {
+  case false:
+    console.log(`${noRepeat} + condition ONE met`);
+    break;
+  case false:
+    console.log(`${noRepeat} + condition TWO met`);
+    break;
+  case false:
+    console.log(`${noRepeat} + condition THREE met`);
+    break;
+  case true:
+    console.log(`${noRepeat} + condition FOUR met`);
+    break;
+  default:
+    console.log("default condition");
+    break;
 }
